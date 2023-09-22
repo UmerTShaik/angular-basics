@@ -1,0 +1,9 @@
+<p [ngStyle]="{backgroundColor:getColor()}" [ngClass]="{online: serverStatus==='online'}">{{'Server'}} with ID {{serverId}} is {{ getSeverStatus() }} </p>
+
+
+<!-- ngClass need to get passed Javscript object key value pairs-->
+<!--{'background-color'} ngStyle alone is a attribute driective which doesnt start with * unlike structural directive -->
+<!-- //String interpolation -->
+<!-- Any expression that evaluates to string in the end can be used inside {{}}, and you cannot have control statements-->
+<!-- Or something that can be converted to string -->
+
